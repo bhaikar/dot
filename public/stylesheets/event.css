@@ -1,0 +1,413 @@
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #343a40;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.navbar .logo {
+    height: 60px;
+    transition: transform 0.3s;
+}
+
+.navbar .logo:hover {
+    transform: scale(1.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    transition: max-height 0.3s ease-out;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-icon span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+h1, h5 {
+    color: white;
+    text-align: center;
+}
+
+.centerContent {
+    position: relative;
+    width: 100%; 
+}
+
+.rightCircle, .leftCircle {
+    height: 100px;
+    width: 100px;
+    border: solid 9px white;
+    background-color: white;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+.rightCircle {
+    top: 110px;
+    left: 75%;
+}
+
+.leftCircle {
+    top: 20px;
+    right: 75%;
+}
+
+.leftCircle img, .rightCircle img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+.leftCircle:hover{
+    box-shadow: 5px 5px 50px white , -5px -5px 50px white;
+}
+
+.rightCircle:hover{
+    box-shadow: 5px 5px 50px white , -5px -5px 50px white;
+}
+.rightVerticalLine, .leftVerticalLine {
+    height: 9px;
+    width: 30%;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+}
+
+.rightVerticalLine {
+    top: 170px;
+    left: 50%;
+}
+
+.leftVerticalLine {
+    top: 70px;
+    right: 50%;
+}
+
+.label {
+    position: absolute;
+    top: -30px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white !important;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#mainLine {
+    position: relative;
+    left: 50%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    height: 600px;
+    width: 9px;
+    border-radius: 30px;
+    background-color: white;
+}
+
+footer {
+    background-color: #343a40;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-link {
+    display: inline-block;
+    width: 40px; 
+    height: 40px; 
+    overflow: hidden;
+}
+
+.mail {
+    width: 40px;
+    height: 60px !important;
+}
+
+.social-link img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.social-link img:hover {
+    transform: scale(1.2);
+}
+
+.box {
+    width: auto;
+    padding: 2em;
+    margin: 50px;
+    text-align: justify;
+    position: relative;
+    background: black;
+    border-radius: 10px;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), transparent 50%, #007bff);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    filter: blur(1.5rem);
+    opacity: 0.8;   
+    animation: 4s spin linear infinite;
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
+}
+
+h2, h1 {
+    background: linear-gradient(180deg, #007bff, white); 
+    -webkit-text-fill-color: transparent; 
+    background-clip:text ;
+    /* -webkit-background-clip: text; */
+    font-size: xxx-large;
+    text-align: center;
+}
+
+b {
+    background: linear-gradient(180deg, #007bff, rgb(1, 10, 74)); 
+    -webkit-text-fill-color: transparent; 
+    background-clip:text ;
+    /* -webkit-background-clip: text; */
+}
+
+p {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.container {
+    padding: 0;
+    width: auto;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.swiper {
+    width: 80%;
+    height: fit-content;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.hidden {
+    opacity: 0;
+    transform: scale(0.8) rotate(5deg);
+    filter: blur(10px);
+    transition: opacity 1s ease, transform 1s ease, filter 1s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+    filter: blur(0);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        display: flex; /* Display flex for alignment */
+        flex-direction: row; /* Keep items in a row */
+        justify-content: space-between; /* Space between logo and menu */
+        align-items: center; /* Center items vertically */
+        padding: 10px 20px; /* Adjust padding */
+        position: relative; /* Relative positioning to keep elements in place */
+    }
+
+    .menu-icon {
+        display: flex; /* Show menu icon */
+        align-items: center;
+        flex-direction: column; /* Stack icon bars vertically */
+        cursor: pointer; /* Show pointer on hover */
+        gap: 5px; /* Space between icon bars */
+        /* position: absolute; Position in top right */
+        /* top: 15px; Adjust top spacing */
+        /* right: 20px; Adjust right spacing */
+    }
+
+    .nav-links {
+        position: absolute; /* Position the menu */
+        top: 56px; /* Position below the navbar */
+        right: 0; /* Align to the right */
+        background-color: #343a40; /* Set background color */
+        width: 100%; /* Full width */
+        display: none; /* Hide by default */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+        padding: 10px 0; /* Adjust padding */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Add shadow for dropdown effect */
+        z-index: 1; /* Ensure it appears on top */
+    }
+
+    .nav-links.open {
+        display: flex; /* Show the menu when open */
+    }
+
+    .nav-links a {
+        padding: 15px 0; /* Adjust padding for spacing */
+        width: 100%; /* Full width */
+        text-align: center; /* Center align text */
+        font-size: 18px; /* Adjust font size */
+        color: white; /* Text color */
+        text-decoration: none; /* Remove underline */
+        
+    }
+
+    .navbar .logo {
+        margin-bottom: 0; /* Remove bottom margin */
+        height: 50px; /* Adjust logo size */
+    }
+
+    .rightCircle, .leftCircle {
+        height: 80px; /* Adjust for mobile */
+        width: 80px;
+    }
+
+    .rightVerticalLine, .leftVerticalLine {
+        width: 20%;
+    }
+
+    .box {
+        width: 90%; /* Adjust width */
+        margin: 20px auto; /* Center the box */
+        padding: 1em; /* Reduce padding */
+    }
+
+    .swiper-slide img {
+        height: 300px; /* Adjust height for mobile */
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .social-icons {
+        flex-direction: space-around;
+        gap: 20px;
+    }
+
+    .social-link {
+        width: 30px; /* Adjust icon size for mobile */
+        height: 30px;
+    }
+
+    p {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    content: '';
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #343a40;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    top: 100%;
+    left: 0;
+    width: 200px;
+    z-index: 1;
+}
+
+.dropdown-menu li {
+    padding: 10px 15px;
+}
+
+.dropdown-menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    z-index: 1;
+}
+
+.dropdown-menu a:hover {
+    background-color: rgb(0, 136, 255);
+    color: white !important;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}

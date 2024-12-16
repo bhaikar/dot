@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 512 512" xml:space="preserve">
+<circle style="fill:#E8E8E8;" cx="256" cy="256" r="256"/>
+<path d="M355.92,455.92h-200c-6.64,0-12-5.36-12-12v-376c0-6.56,5.36-12,12-12h200c6.64,0,12,5.44,12,12v376
+	C367.92,450.56,362.56,455.92,355.92,455.92z"/>
+<rect x="155.92" y="87.92" width="200" height="320"/>
+<g>
+	<path style="fill:#AAAAAA;" d="M279.68,75.92h-48c-2.16,0-4-1.76-4-4l0,0c0-2.16,1.76-4,4-4h48c2.16,0,4,1.76,4,4l0,0
+		C283.68,74.16,281.92,75.92,279.68,75.92z"/>
+	<path style="fill:#AAAAAA;" d="M279.92,431.92h-48c-2.16,0-4-1.76-4-4l0,0c0-2.24,1.84-4,4-4h48c2.24,0,4,1.76,4,4l0,0
+		C283.92,430.16,282.16,431.92,279.92,431.92z"/>
+</g>
+<g>
+	<path style="fill:#FFFFFF;" d="M403.76,314.96H238.88c-8.24,0-14.96-6.72-14.96-14.96V195.04c0-8.24,6.72-14.96,14.96-14.96h164.88
+		c8.24,0,14.96,6.72,14.96,14.96v104.88C418.72,308.24,412,314.96,403.76,314.96z"/>
+	<polygon style="fill:#FFFFFF;" points="373.76,359.92 373.76,300 298.8,300 	"/>
+</g>
+<rect x="313.84" y="225.04" width="14.96" height="14.96"/>
+<rect x="283.84" y="225.04" width="14.96" height="14.96"/>
+<rect x="253.84" y="225.04" style="fill:#FFFFFF;" width="14.96" height="14.96"/>
+<rect x="343.76" y="225.04" width="14.96" height="14.96"/>
+<rect x="373.76" y="225.04" width="14.96" height="14.96"/>
+<rect x="313.84" y="255.04" width="14.96" height="14.96"/>
+<rect x="343.76" y="255.04" width="14.96" height="14.96"/>
+<rect x="373.76" y="255.04" width="14.96" height="14.96"/>
+</svg>

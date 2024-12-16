@@ -1,0 +1,517 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+.container1{
+    background-color: white;
+    color: black;
+    text-align: center;
+    margin-top: 100px;
+    min-height: 400px;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+.navbar {
+    background-color: #1d1c1c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.navbar .logo {
+    height: 60px;
+    transition: transform 0.3s;
+}
+
+.navbar .logo:hover {
+    transform: scale(1.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    transition: max-height 0.3s ease-out;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ebeba8;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-icon span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh; 
+    padding: 20px;
+    gap: 40px; 
+    color: white !important;
+    background-color: #0a0a0a;
+}
+.title{
+    color: white !important;
+}
+.slot {
+    background-color: #141414; 
+    width: 450px;
+    height: 450px; 
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 60px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(245, 245, 220, 0.2), inset 0 0 20px rgba(245, 245, 220, 0.1); 
+    text-align: center;
+    transition: transform 0.4s, box-shadow 0.4s, border-color 0.4s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #f5f5dc; 
+    background-image: linear-gradient(145deg, #141414, #0a0a0a); 
+    z-index: 1;
+    perspective: 1000px; /
+}
+
+.slot::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, transparent 40%, #f5f5dc 40%, #f5f5dc 60%, transparent 60%);
+    animation: rotateBackground 6s linear infinite;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.slot::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(245, 245, 220, 0.1), transparent);
+    opacity: 0.2;
+    pointer-events: none; 
+    animation: pulse 5s infinite;
+}
+
+.slot:hover {
+    transform: translateY(-20px) rotateX(10deg); 
+    box-shadow: 0 0 40px rgba(245, 245, 220, 0.4), inset 0 0 40px rgba(245, 245, 220, 0.2);
+    border-color: #e6e6d6; /
+}
+.f1{
+    border-top: 3px solid#f5f5dc;
+    padding-top: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    color: white;
+}
+.f2{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18pt;
+    color: white !important;
+}
+.f3{
+    border-top: 3px solid #f5f5dc;
+    padding-top: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    color: white;
+}
+.social-link{
+    display: inline-block;
+    width: 40px; 
+    height: 40px; 
+    overflow: hidden;
+}
+.social-link img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.social-link img:hover {
+    transform: scale(1.2);
+}
+.footer{
+    display: flex;
+    flex-direction: space-around;
+    gap:40px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #141414;
+}
+
+@keyframes rotateBackground {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.2;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.3;
+    }
+}
+
+.icon img {
+    width: 80px; 
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: #0a0a0a;
+    padding: 10px;
+    border: 3px solid #f5f5dc; 
+    box-shadow: 0 0 15
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        width: 100%; /* Ensure the container uses full width */
+        box-sizing: border-box; /* Include padding/border in width */
+        overflow-x: hidden; /* Prevent horizontal scrolling due to overflow */
+    }
+
+    .container img {
+        max-width: 100%; /* Ensures the image does not exceed the container's width */
+        height: auto; /* Maintains the aspect ratio */
+        display: block; /* Removes any inline spacing */
+        margin: 0 auto; /* Centers the image */
+        box-sizing: border-box; /* Includes padding and border in width/height */
+    }
+
+ .footer {
+        width: 100%;
+        padding: 10px 15px; /* Adjust padding for better spacing */
+        box-sizing: border-box; /* Include padding in width */
+        display: space-around; /* Use flexbox layout */
+        flex-wrap: wrap; /* Allow items to wrap */
+        justify-content: center; /* Center items horizontally */
+    }
+
+    /* Ensure footer content elements fit properly */
+    .f1, .f2, .f3 {
+        flex: 1 1 auto; /* Allow flexible width */
+        max-width: 100%; /* Prevent exceeding container width */
+        text-align: center;
+        margin: 5px; /* Add margin for spacing */
+        box-sizing: border-box; /* Include padding in width */
+    }
+
+    /* Ensure social links fit well */
+    .social-link {
+        margin: 5px; /* Smaller margin for spacing */
+        display: space-around;
+        justify-content: center; /* Center social links */
+    }
+
+    .icon img {
+        width: 40px; /* Adjusted icon size */
+        height: 40px; /* Maintain aspect ratio */
+    }
+
+    /* Make sure slots are properly sized and centered */
+    .slot {
+        width: calc(100% - 30px); /* Full width minus padding/margins */
+        max-width: 100%; /* Prevent exceeding container width */
+        margin: 15px auto; /* Center slots and adjust margin */
+        padding: 10px; /* Add padding for better readability */
+        box-sizing: border-box; /* Include padding in width */
+        overflow: hidden; /* Hide any overflowing content */
+    }
+
+    /* Ensure images inside slots are responsive */
+    .slot img {
+        width: 100%; /* Make sure images fit within the slot */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Remove inline spacing */
+        box-sizing: border-box; /* Include padding and border in width */
+    }
+
+    /* Adjust content inside the slots */
+    .slot .content {
+        width: 100%; /* Full width for content */
+        padding: 10px; /* Padding for better spacing */
+        box-sizing: border-box; /* Include padding in width */
+        text-align: center; /* Center text */
+        overflow-wrap: break-word; /* Break long words to prevent overflow */
+    }
+
+    /* Adjust font sizes for readability */
+    .title {
+        font-size: 18px; /* Adjusted title font size */
+    }
+
+    .content {
+        font-size: 14px; /* Adjusted content font size */
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+    /* Ensure the container is using full width without overflow */
+    .container {
+        width: 100%;
+        padding: 15px; /* Adjust padding for better spacing */
+        box-sizing: border-box; /* Include padding in element's width and height */
+        overflow: hidden; /* Prevent any content from causing horizontal scroll */
+        /* Ensure the container does not get clipped */
+        max-width: 100%; /* Prevent exceeding viewport width */
+    }
+
+    /* Ensure the footer fits well */
+    .footer {
+        width: 100%;
+        padding: 12px; /* Adjust padding to prevent overflow */
+        gap: 12px; /* Moderate gap to avoid excessive spacing */
+        box-sizing: border-box; /* Include padding in width */
+        display: space-around; /* Use flexbox layout */
+        flex-wrap: wrap; /* Allow items to wrap */
+        justify-content: center; /* Center items horizontally */
+        overflow: hidden;
+    }
+
+    /* Adjust footer content elements */
+    .f1, .f2, .f3 {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0; /* Add vertical margins */
+        box-sizing: border-box; /* Include padding in width */
+    }
+
+    /* Ensure social links fit well */
+    .social-link {
+        margin: 5px; /* Smaller margin for spacing */
+        display: space-around;
+        justify-content: center; /* Center social links */
+    }
+
+    .icon img {
+        width: 50px; /* Adjusted icon size */
+        height: 50px; /* Maintain aspect ratio */
+    }
+
+    /* Make sure slots are properly sized and centered */
+    .slot {
+        width: 100%; /* Use full width of the container */
+        max-width: 100%; /* Prevent exceeding container width */
+        margin-bottom: 15px; /* Adjust margin for spacing */
+        padding: 10px; /* Add padding for better readability */
+        box-sizing: border-box; /* Include padding in width */
+        overflow: hidden; /* Hide any overflowing content */
+    }
+
+    /* Ensure images inside slots are responsive */
+    .slot img {
+        width: 100%; /* Make sure images fit within the slot */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Remove inline spacing */
+        box-sizing: border-box; /* Include padding and border in width */
+    }
+
+    /* Adjust content inside the slots */
+    .slot .content {
+        width: 100%; /* Full width for content */
+        padding: 10px; /* Padding for better spacing */
+        box-sizing: border-box; /* Include padding in width */
+        text-align: center; /* Center text */
+        overflow-wrap: break-word; /* Break long words to prevent overflow */
+    }
+
+    /* Adjust font sizes for readability */
+    .title {
+        font-size: 20px; /* Adjusted title font size */
+    }
+
+    .content {
+        font-size: 14px; /* Adjusted content font size */
+    }
+}
+
+
+
+
+
+/* Existing mobile media query */
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        position: relative;
+    }
+
+    .menu-icon {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 5px;
+        /* position: absolute;
+        top: 15px;
+        right: 20px; */
+    }
+
+
+    .nav-links {
+        position: absolute;
+        top: 56px;
+        right: 0;
+        background-color: #343a40;
+        width: 100%;
+        display: none; /* Hide by default */
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    .nav-links.show {
+        display: flex; /* Show the menu when open */
+    }
+
+    .nav-links a {
+        padding: 15px 0;
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .navbar .logo {
+        margin-bottom: 0;
+        height: 50px;
+    }
+
+    .container1 {
+        margin-left: 25px !important;
+        margin-right: 25px !important;
+    }
+
+}
+
+/* Ensure dropdown menu works in mobile view */
+@media (max-width: 768px) {
+    .dropdown-menu {
+        position: static; /* Make dropdown menu flow within the parent */
+        background-color: #343a40;
+        box-shadow: none; /* Remove shadow */
+        width: 100%; /* Full width */
+    }
+
+    .dropdown-menu li {
+        padding: 10px 15px;
+    }
+}
+
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    content: '';
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #343a40;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    top: 100%;
+    left: 0;
+    width: 200px;
+    z-index: 1;
+}
+
+.dropdown-menu li {
+    padding: 10px 15px;
+}
+
+.dropdown-menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    z-index: 1;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ebeba8;
+    color: black !important;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+h1, h2{
+    color: black;
+    text-align: center;
+    text-shadow: #95989b 1px 1px;
+    padding: 10px;
+}
+
+.container p{
+    padding: 40px;
+}

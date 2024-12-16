@@ -1,0 +1,225 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+
+.navbar {
+    background-color: #343a40;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.navbar .logo {
+    height: 60px;
+    transition: transform 0.3s;
+}
+
+.navbar .logo:hover {
+    transform: scale(1.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    transition: max-height 0.3s ease-out;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-icon span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+
+.workshops {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 10%;
+}
+
+.workshop-slot {
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    width: 45%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.workshop-slot:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.workshop-slot img {
+    width: 80%;
+    border-bottom: 3px solid #007bff;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+.workshop-slot h3 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #343a40;
+}
+
+.workshop-slot p {
+    font-size: 16px;
+    color: #6c757d;
+    padding: 0 20px 20px;
+}
+
+
+footer {
+    background-color: #343a40;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-link {
+    display: inline-block;
+    width: 40px; 
+    height: 40px; 
+    overflow: hidden;
+}
+.mail{
+    width: 40px;
+    height: 60px !important;
+}
+.social-link img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.social-link img:hover {
+    transform: scale(1.2);
+}
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 56px;
+        right: 0;
+        background-color: #343a40;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .nav-links.open {
+        max-height: 300px; 
+    }
+
+    .nav-links a {
+        padding: 15px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .navbar {
+        flex-direction: row;
+    }
+
+    .workshop-slot {
+        width: 100%;
+    }
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    content: '';
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #343a40;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    top: 100%;
+    left: 0;
+    width: 200px;
+    z-index: 1;
+}
+
+.dropdown-menu li {
+    padding: 10px 15px;
+}
+
+.dropdown-menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    z-index: 1;
+}
+
+.dropdown-menu a:hover {
+    background-color: rgb(0, 136, 255);
+    color: white !important;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
