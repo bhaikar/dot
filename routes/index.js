@@ -6,23 +6,23 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
-router.get('/about-us', function(req, res, next) {
+router.get('/aboutus', function(req, res, next) {
   res.render('aboutus'); // Ensure 'aboutus.ejs' exists in the views folder
 });
 
-router.get('/contact-cs', function(req, res, next) {
+router.get('/contact', function(req, res, next) {
   res.render('contact'); // Ensure 'contact.ejs' exists in the views folder
 });
 
-router.get('/our-team', function(req, res, next) {
+router.get('/our_team', function(req, res, next) {
   res.render('our_team'); // Ensure 'our_team.ejs' exists in the views folder
 });
 
-router.get('/workshops', function(req, res, next) {
+router.get('/workshop', function(req, res, next) {
   res.render('workshop'); // Ensure 'workshop.ejs' exists in the views folder
 });
 
-router.get('/projects', function(req, res, next) {
+router.get('/project', function(req, res, next) {
   res.render('project'); // Ensure 'project.ejs' exists in the views folder
 });
 

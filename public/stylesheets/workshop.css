@@ -3,12 +3,12 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-color:#000000;
 }
 
 
 .navbar {
-    background-color: #343a40;
+    background: linear-gradient(to right, #000000, #C4BEB4);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -43,7 +43,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #007bff;
+    color: #000000;
 }
 
 
@@ -72,7 +72,7 @@ body {
 }
 
 .workshop-slot {
-    background-color: white;
+    background-color: #C4BEB4;
     border-radius: 10px;
     margin: 20px;
     width: 45%;
@@ -93,7 +93,9 @@ body {
 
 .workshop-slot img {
     width: 80%;
-    border-bottom: 3px solid #007bff;
+    
+    
+    border-bottom: 3px solid #101115;
     margin-bottom: 15px;
     padding: 20px;
 }
@@ -112,7 +114,8 @@ body {
 
 
 footer {
-    background-color: #343a40;
+        background: linear-gradient(to right, #000000, #C4BEB4);
+        border-top-left-radius: 100px;
     padding: 20px 0;
     text-align: center;
 }
@@ -128,16 +131,18 @@ footer {
     width: 40px; 
     height: 40px; 
     overflow: hidden;
+    ;
 }
 .mail{
     width: 40px;
-    height: 60px !important;
+    height: 40px !important;
 }
 .social-link img {
     width: 100%;
     height: auto;
     display: block;
     transition: transform 0.3s;
+    
 }
 
 .social-link img:hover {
@@ -216,10 +221,15 @@ footer {
 }
 
 .dropdown-menu a:hover {
-    background-color: rgb(0, 136, 255);
-    color: white !important;
+    background-color: #C4BEB4;
+    color: rgb(0, 0, 0) !important;
 }
 
 .dropdown:hover .dropdown-menu {
     display: block;
 }
+
+.footerBottom p {
+    color: white;
+}
+
