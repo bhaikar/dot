@@ -28,6 +28,9 @@ let hide_2=document.getElementById('hide_2');
 });
 
 
+
+
+
 // // document.getElementById("p2").style.color = "blue";
 // menuIcon.addEventListener('click',()=>{
 //     if (hide == 0){

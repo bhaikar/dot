@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,40 @@
   <link rel="stylesheet" href="/stylesheets/event.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
 <body>
+  <header>
+    <nav class="navbar">
+      <a href="/"><img src="/images/dotlogo.png" alt="Club Logo" class="logo"></a>
+      <div class="menu-icon" id="menu-icon">
+        <span id="hide_1"></span>
+        <span id="rotate_1" style="position: absolute;top: 35px;"></span>
+        <span id="rotate_2"></span>
+        <span id="hide_2"></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/event">Event</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Our Work</a>
+          <ul class="dropdown-menu">
+            <li><a href="/workshop">Workshop</a></li>
+            <li><a href="/project">Project</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#our_team" class="dropdown-toggle">Our Team</a>
+          <ul class="dropdown-menu">
+            <li><a href="/our_team">Team</a></li>
+            <li><a href="https://devops-malnad.github.io/DevopsAttendanceSystem/">Login</a></li>
+          </ul>
+        </li>
+        <li><a href="/contact">Contact Us</a></li>
+        <li><a href="/aboutus">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <div class="ag-timeline-block">
     <div class="ag-timeline_title-box">
       <div class="ag-timeline_tagline">DevOps</div>
@@ -32,23 +66,29 @@
               <div class="ag-timeline-card_item">
                 <div class="ag-timeline-card_inner">
                   <div class="ag-timeline-card_img-box">
-                    <!-- <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-13.png" class="ag-timeline-card_img" width="640" height="360" /> -->
+                    <img
+                      src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-13.png"
+                      class="ag-timeline-card_img" width="640" height="360" />
                   </div>
                   <div class="ag-timeline-card_info">
                     <div class="ag-timeline-card_title">Hack.MCE 4.0</div>
                     <div class="ag-timeline-card_desc">
                       Hack.MCE 4.0 Techno Gaming Fest 2024 - Coming Soon!
-Get Ready for the Ultimate Gaming Experience!
-Brace yourselves for the most epic gaming event of the year! Hack.MCE 4.0 Techno Gaming Fest 2024 is almost here, and we're gearing up to bring you an unforgettable experience. Whether you're a hardcore gamer, tech enthusiast, or just love all things gaming, this fest has something for everyone!
-Stay Tuned!
-The countdown has begun, and we can't wait to reveal more exciting details. Follow us on social media for the latest updates, special announcements, and sneak peeks.
+                      Get Ready for the Ultimate Gaming Experience!
+                      Brace yourselves for the most epic gaming event of the year! Hack.MCE 4.0 Techno Gaming Fest 2024
+                      is almost here, and we're gearing up to bring you an unforgettable experience. Whether you're a
+                      hardcore gamer, tech enthusiast, or just love all things gaming, this fest has something for
+                      everyone!
+                      Stay Tuned!
+                      The countdown has begun, and we can't wait to reveal more exciting details. Follow us on social
+                      media for the latest updates, special announcements, and sneak peeks.
                     </div>
                   </div>
                 </div>
                 <div class="ag-timeline-card_arrow"></div>
               </div>
             </div>
-  
+
             <div class="js-timeline_item ag-timeline_item">
               <div class="ag-timeline-card_box">
                 <div class="ag-timeline-card_meta-box">
@@ -61,20 +101,27 @@ The countdown has begun, and we can't wait to reveal more exciting details. Foll
               <div class="ag-timeline-card_item">
                 <div class="ag-timeline-card_inner">
                   <div class="ag-timeline-card_img-box">
-                    <img src="https://devops-malnad.github.io/DotSite/event%20images/HackMce3.0/6.jpeg" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                    <img src="/images/eventimages/HackMce3.0/1.JPG" class="ag-timeline-card_img" width="640"
+                      height="360" alt="" />
                   </div>
                   <div class="ag-timeline-card_info">
                     <div class="ag-timeline-card_title">Hack.MCE 3.0</div>
                     <div class="ag-timeline-card_desc">
-                      HACK.MCE 3.0 hosted by the DevOps team, was a grand event that took place on the 16th, 17th, and 22nd of December 2023. The festivities kicked off with the Gameathon, an eagerly anticipated inter-branch e-sports competition that energized the campus, with prelims held a week prior at the bustling college canteen.
-The fest was more than just a competition—it was a celebration of creativity, collaboration, and community. It successfully brought together tech enthusiasts and gamers, fostering an environment of learning, networking, and fun. HACK.MCE 3.0 left a lasting impression, setting a high bar for future events and further solidifying its place as a premier tech and gaming fest in the college.
+                      HACK.MCE 3.0 hosted by the DevOps team, was a grand event that took place on the 16th, 17th, and
+                      22nd of December 2023. The festivities kicked off with the Gameathon, an eagerly anticipated
+                      inter-branch e-sports competition that energized the campus, with prelims held a week prior at the
+                      bustling college canteen.
+                      The fest was more than just a competition—it was a celebration of creativity, collaboration, and
+                      community. It successfully brought together tech enthusiasts and gamers, fostering an environment
+                      of learning, networking, and fun. HACK.MCE 3.0 left a lasting impression, setting a high bar for
+                      future events and further solidifying its place as a premier tech and gaming fest in the college.
                     </div>
                   </div>
                 </div>
                 <div class="ag-timeline-card_arrow"></div>
               </div>
             </div>
-  
+
             <div class="js-timeline_item ag-timeline_item">
               <div class="ag-timeline-card_box">
                 <div class="js-timeline-card_point-box ag-timeline-card_point-box">
@@ -87,19 +134,34 @@ The fest was more than just a competition—it was a celebration of creativity, 
               <div class="ag-timeline-card_item">
                 <div class="ag-timeline-card_inner">
                   <div class="ag-timeline-card_img-box">
-                    <img src="https://devops-malnad.github.io/DotSite/event%20images/HackMce2.0/6.jpeg" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                    <img src="/images/eventimages/HackMce2.0/1.JPEG" class="ag-timeline-card_img" width="640"
+                      height="360" alt="" />
+                    <!-- <img src="/images/eventimages/HackMce3.0/1.JPG" alt="HackMce3.0">
+                    <img src="/images/eventimages/HackMce3.0/2.jpg" alt="HackMce3.0">
+                    <img src="/images/eventimages/HackMce3.0/3.jpg" alt="HackMce3.0">
+                    <img src="/images/eventimages/HackMce3.0/4.jpg" alt="HackMce3.0">
+                    <img src="/images/eventimages/HackMce3.0/5.jpeg" alt="HackMce3.0">
+                    <img src="/images/eventimages/HackMce3.0/6.jpeg" alt="HackMce3.0">
+                    <img src="/images/eventimages/HackMce3.0/7.jpeg" alt="HackMce3.0">
+                    <img src="/images/eventimages/HackMce3.0/8.jpeg" alt="HackMce3.0"> -->
                   </div>
                   <div class="ag-timeline-card_info">
                     <div class="ag-timeline-card_title">Hack.MCE 2.0</div>
                     <div class="ag-timeline-card_desc">
-                      The Techno Gaming Fest HACK.MCE 2.0 took place on the 18th and 19th of June 2022, featuring a dynamic lineup of tech-based events such as Debug, Circuitmania, and Webpage Designing, among many others. This grand fest wasn’t just about tech; it also celebrated the spirit of gaming with Gameathon, an inter-branch e-sports event that brought out the competitive spirit among participants. The Gameathon prelims kicked off a week before the main event, creating a buzz in the college canteen as students gathered to showcase their gaming skills. The fest was a huge success, blending technology and gaming into an unforgettable experience for all attendees.
+                      The Techno Gaming Fest HACK.MCE 2.0 took place on the 18th and 19th of June 2022, featuring a
+                      dynamic lineup of tech-based events such as Debug, Circuitmania, and Webpage Designing, among many
+                      others. This grand fest wasn’t just about tech; it also celebrated the spirit of gaming with
+                      Gameathon, an inter-branch e-sports event that brought out the competitive spirit among
+                      participants. The Gameathon prelims kicked off a week before the main event, creating a buzz in
+                      the college canteen as students gathered to showcase their gaming skills. The fest was a huge
+                      success, blending technology and gaming into an unforgettable experience for all attendees.
                     </div>
                   </div>
                 </div>
                 <div class="ag-timeline-card_arrow"></div>
               </div>
             </div>
-  
+
             <div class="js-timeline_item ag-timeline_item">
               <div class="ag-timeline-card_box">
                 <div class="ag-timeline-card_meta-box">
@@ -112,12 +174,19 @@ The fest was more than just a competition—it was a celebration of creativity, 
               <div class="ag-timeline-card_item">
                 <div class="ag-timeline-card_inner">
                   <div class="ag-timeline-card_img-box">
-                    <img src="https://devops-malnad.github.io/DotSite/event%20images/HackMce1.0/4.jpeg" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                    <img src="https://devops-malnad.github.io/DotSite/event%20images/HackMce1.0/4.jpeg"
+                      class="ag-timeline-card_img" width="640" height="360" alt="" />
                   </div>
                   <div class="ag-timeline-card_info">
                     <div class="ag-timeline-card_title">Hack.MCE 1.0</div>
                     <div class="ag-timeline-card_desc">
-                      A national-level Hackathon centered on the theme "Lifestyle" took place on the 28th, 29th, and 30th of October 2018. The event featured an intense 24-hour coding competition, where 80 students from various districts participated, showcasing their technical skills and creativity. In addition to the Hackathon, a workshop on the emerging topic of blockchain was conducted, providing participants with valuable insights into this cutting-edge technology. The event brought together a diverse group of tech enthusiasts, fostering innovation and learning in a collaborative environment.
+                      A national-level Hackathon centered on the theme "Lifestyle" took place on the 28th, 29th, and
+                      30th of October 2018. The event featured an intense 24-hour coding competition, where 80 students
+                      from various districts participated, showcasing their technical skills and creativity. In addition
+                      to the Hackathon, a workshop on the emerging topic of blockchain was conducted, providing
+                      participants with valuable insights into this cutting-edge technology. The event brought together
+                      a diverse group of tech enthusiasts, fostering innovation and learning in a collaborative
+                      environment.
                     </div>
                   </div>
                 </div>
@@ -126,7 +195,7 @@ The fest was more than just a competition—it was a celebration of creativity, 
             </div>
 
 
-    
+
             <div class="js-timeline_item ag-timeline_item">
               <div class="ag-timeline-card_box">
                 <div class="js-timeline-card_point-box ag-timeline-card_point-box">
@@ -139,14 +208,25 @@ The fest was more than just a competition—it was a celebration of creativity, 
               <div class="ag-timeline-card_item">
                 <div class="ag-timeline-card_inner">
                   <div class="ag-timeline-card_img-box">
-                    <img src="https://devops-malnad.github.io/DotSite/event%20images/DotBytes/1.png" class="ag-timeline-card_img" width="640" height="360" />
+                    <img src="https://devops-malnad.github.io/DotSite/event%20images/DotBytes/1.png"
+                      class="ag-timeline-card_img" width="640" height="360" />
                   </div>
                   <div class="ag-timeline-card_info">
                     <div class="ag-timeline-card_title">DOT Bytes</div>
                     <div class="ag-timeline-card_desc">
-                      The event .Bytes was successfully organized by the DevOps Team during the odd semester on the 3rd and 4th of November 2017. The event truly embodied the tagline, "Where Technology Meets Fun," as it creatively blended technical challenges with engaging activities, making technology both accessible and enjoyable for all participants
-The event offered the team members valuable hands-on experience with software tools essential for application development, greatly enhancing their technical expertise. This not only inspired the students of MCE but also fostered a culture of innovation and creativity on campus.
-Two standout events, Thief City and Phat Anthaheli, were major highlights of .Bytes. Thief City challenged participants with puzzles and problem-solving tasks rooted in coding and logic, while Phat Anthaheli brought a playful, competitive edge, pushing participants to think outside the box and apply their technical knowledge in novel ways. The success of .Bytes demonstrated the power of combining learning with fun, leaving a lasting impact on everyone involved and setting a high standard for future events 
+                      The event .Bytes was successfully organized by the DevOps Team during the odd semester on the 3rd
+                      and 4th of November 2017. The event truly embodied the tagline, "Where Technology Meets Fun," as
+                      it creatively blended technical challenges with engaging activities, making technology both
+                      accessible and enjoyable for all participants
+                      The event offered the team members valuable hands-on experience with software tools essential for
+                      application development, greatly enhancing their technical expertise. This not only inspired the
+                      students of MCE but also fostered a culture of innovation and creativity on campus.
+                      Two standout events, Thief City and Phat Anthaheli, were major highlights of .Bytes. Thief City
+                      challenged participants with puzzles and problem-solving tasks rooted in coding and logic, while
+                      Phat Anthaheli brought a playful, competitive edge, pushing participants to think outside the box
+                      and apply their technical knowledge in novel ways. The success of .Bytes demonstrated the power of
+                      combining learning with fun, leaving a lasting impact on everyone involved and setting a high
+                      standard for future events
                     </div>
                   </div>
                 </div>
@@ -158,6 +238,24 @@ Two standout events, Thief City and Phat Anthaheli, were major highlights of .By
       </div>
     </section>
   </div>
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/devops_malnad/" target="_blank" class="social-link">
+        <img src="/images/instalogo.png" alt="Instagram">
+      </a>
+      <a href="https://www.linkedin.com/company/devops-team-mce/posts/?feedView=all" target="_blank"
+        class="social-link">
+        <img src="/images/linkedinlogo.png" alt="LinkedIn">
+      </a>
+      <a href="devopsteammalnad@gmail.com" target="_blank" class="social-link">
+        <img src="/images/maillogo.png" alt="Gmail">
+      </a>
+      <a href="https://github.com/Devops-Malnad" target="_blank" class="social-link">
+        <img src="https://cdn.worldvectorlogo.com/logos/github-icon-1.svg" alt="GitHub">
+      </a>
+    </div>
+  </footer>
   <script src="/javascripts/event.js"></script>
 </body>
+
 </html>

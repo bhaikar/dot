@@ -1,9 +1,3 @@
-// Toggle mobile menu
-// document.getElementById('menu-icon').addEventListener('click', () => {
-//     const navLinks = document.getElementById('nav-links');
-//     navLinks.classList.toggle('open');
-// });
-
 
 document.addEventListener("DOMContentLoaded", function () {
     const menuIcon = document.getElementById("menu-icon");
@@ -33,3 +27,5 @@ let hide_2=document.getElementById('hide_2');
         
     });
 });
+
+console.log("contact.js loaded");

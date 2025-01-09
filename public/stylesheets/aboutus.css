@@ -19,7 +19,7 @@ body {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background: linear-gradient(to right, #000000, #C4BEB4);
+    background:  #050505;
 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 40px;
@@ -28,13 +28,13 @@ body {
 .container1 h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #000000;
+    color: #ffffff;
 }
 
 .container1 h2 {
     font-size: 2rem;
     margin: 40px 0 20px;
-    color: #000000;
+    color: #ffffff;
 }
 
 .container1 p {
@@ -107,7 +107,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #ebeba8;
+    color: #000000;
 }
 
 .menu-icon {
@@ -557,7 +557,7 @@ body {
         position: absolute;
         top: 56px;
         right: 0;
-        background-color: #343a40;
+        background-color: #343a40; /*background color of the dropdown of responsive*/
         width: 100%;
         display: none;
         /* Hide by default */
@@ -578,7 +578,7 @@ body {
         width: 100%;
         text-align: center;
         font-size: 18px;
-        color: white;
+        color: rgb(255, 255, 255); /*color of the text in the dropdown of responsive*/
         text-decoration: none;
     }
 
@@ -591,15 +591,15 @@ body {
         margin-left: 25px !important;
         margin-right: 25px !important;
     }
-
 }
+    
 
 /* Ensure dropdown menu works in mobile view */
 @media (max-width: 768px) {
     .dropdown-menu {
         position: static;
         /* Make dropdown menu flow within the parent */
-        background-color: #343a40;
+        background-color: #343a40; 
         box-shadow: none;
         /* Remove shadow */
         width: 100%;

@@ -1,9 +1,8 @@
-
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color:#000000;
+    background-color: #000000;
 }
 
 
@@ -58,7 +57,7 @@ body {
     display: block;
     width: 30px;
     height: 3px;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     border-radius: 3px;
     transition: all 0.3s;
 }
@@ -93,8 +92,6 @@ body {
 
 .workshop-slot img {
     width: 80%;
-    
-    
     border-bottom: 3px solid #101115;
     margin-bottom: 15px;
     padding: 20px;
@@ -114,8 +111,7 @@ body {
 
 
 footer {
-        background: linear-gradient(to right, #000000, #C4BEB4);
-        border-top-left-radius: 100px;
+    background: linear-gradient(to right, #000000, #C4BEB4);
     padding: 20px 0;
     text-align: center;
 }
@@ -128,21 +124,23 @@ footer {
 
 .social-link {
     display: inline-block;
-    width: 40px; 
-    height: 40px; 
+    width: 40px;
+    height: 40px;
     overflow: hidden;
     ;
 }
-.mail{
+
+.mail {
     width: 40px;
     height: 40px !important;
 }
+
 .social-link img {
     width: 100%;
     height: auto;
     display: block;
     transition: transform 0.3s;
-    
+
 }
 
 .social-link img:hover {
@@ -150,8 +148,8 @@ footer {
 }
 
 
-@media (max-width: 768px) {
-    .nav-links {
+.nav-links {
+        @media (max-width: 768px) {
         position: absolute;
         top: 56px;
         right: 0;
@@ -164,7 +162,7 @@ footer {
     }
 
     .nav-links.open {
-        max-height: 300px; 
+        max-height: 300px;
     }
 
     .nav-links a {
@@ -232,4 +230,3 @@ footer {
 .footerBottom p {
     color: white;
 }
-
