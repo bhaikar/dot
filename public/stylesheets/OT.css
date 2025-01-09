@@ -43,8 +43,8 @@ body {
 }
 
 .dropdown-menu a:hover {
-    background-color: #ffe600;
-    color: #000000 !important;
+    background-color: #C4BEB4;
+    color: rgb(0, 0, 0) !important;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -52,8 +52,8 @@ body {
 }
 
 .navbar {
-    background-color: #131212;
-    color: #FFDB58;
+    background: linear-gradient(to right, #000000, #C4BEB4);
+    color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -79,7 +79,7 @@ body {
 }
 
 .nav-links a {
-    color: #FFDB58;
+    color: #ffffff;
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s;
@@ -87,7 +87,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .menu-icon {
@@ -158,7 +158,8 @@ body {
 
 
 footer {
-    background-color: #131111;
+    background: linear-gradient(to right, #000000, #C4BEB4);
+    border-top-left-radius: 100px;
     padding: 20px 0;
     text-align: center;
 }
