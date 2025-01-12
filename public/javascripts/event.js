@@ -99,4 +99,3 @@ let hide_2=document.getElementById('hide_2');
   
     });
   })(jQuery);
-  
