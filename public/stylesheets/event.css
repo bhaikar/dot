@@ -351,9 +351,23 @@ img {
 
 .ag-timeline_tagline {
   font-size: 70px;
-  color: #C4BEB4;
+  color: #000000;
   margin: 5% 43% 1%;
+  animation: textGlow 1.5s ease-in-out infinite;
 }
+
+@keyframes textGlow {
+    0% {
+        text-shadow: 0 0 5px #C4BEB4, 0 0 10px #C4BEB4, 0 0 15px #C4BEB4, 0 0 20px #C4BEB4;
+    }
+    50% {
+        text-shadow: 0 0 10px #C4BEB4, 0 0 20px #C4BEB4, 0 0 30px #C4BEB4, 0 0 40px #C4BEB4;
+    }
+    100% {
+        text-shadow: 0 0 5px #C4BEB4, 0 0 10px #C4BEB4, 0 0 15px #C4BEB4, 0 0 20px #C4BEB4;
+    }
+}
+
 .ag-timeline_title {
   background-image: url(https://icolorpalette.com/download/solidcolorimage/c4beb4_solid_color_background_icolorpalette.png?w=420);
   background-repeat: no-repeat;
@@ -369,7 +383,6 @@ img {
 
 .ag-timeline_item {
   margin: 0 0 50px;
-
   position: relative;
 }
 
@@ -557,11 +570,24 @@ img {
 .ag-timeline-card_img {
   width: 100%;
 }
+.ag-timeline-card_img:hover{
+  transition: transform 0.4s, box-shadow 0.4s, border-color 0.4s;
+  transform: scale(1.1);
+  box-shadow: 5px 5px 50px rgba(255, 255, 255, 0.438) , -5px -5px 50px rgba(255, 255, 255, 0.438);
+  border-color: #C4BEB4;
+}
 
 .ag-timeline-card_info {
   padding: 20px 30px;
   background-color: #C4BEB4;
   border: 2px solid #0c0c0c;
+}
+.ag-timeline-card_info:hover{
+  transition: transform 0.4s, box-shadow 0.4s, border-color 0.4s;
+  transform: scale(1.1);
+  box-shadow: 5px 5px 50px rgba(255, 255, 255, 0.438) , -5px -5px 50px rgba(255, 255, 255, 0.438);
+  border-color: #C4BEB4;
+
 }
 
 .ag-timeline-card_title {

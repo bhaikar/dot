@@ -4,14 +4,25 @@ body {
     padding: 0;
     background-color: #000000;
 }
-
+    
 #head {
     text-align: center;
-    color: rgb(252, 252, 252);
+    color: rgb(0, 0, 0);
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 20px 0px;
-    letter-spacing: 2px
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    animation: textGlow 1s infinite alternate;
 }
+
+@keyframes textGlow {
+    0% {
+      text-shadow: 0 0 5px  rgb(196, 190, 180 , 1), 0 0 10px rgb(196, 190, 180, 1), 0 0 20px rgb(196, 190, 180, 1), 0 0 30px rgb(196, 190, 180, 1);
+    }
+    100% {
+      text-shadow: 0 0 10px rgb(196, 190, 180, 1), 0 0 20px rgb(196, 190, 180, 1), 0 0 30px rgb(196, 190, 180, 1), 0 0 40px rgb(196, 190, 180, 1);
+    }
+  }
 
 .dropdown {
     position: relative;
@@ -158,6 +169,7 @@ body {
     color: #C4BEB4;
     padding: 0 20px 20px;
     letter-spacing: 1px;
+    font-weight:bold;
 }
 
 footer {
